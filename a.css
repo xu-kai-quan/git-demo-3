@@ -9,6 +9,16 @@ a{
 body{
     margin:0;
     padding:0;
+    background: #efefef;
+}
+h1,h2,p{
+    margin: 0;
+    padding: 0;
+}
+hr{
+    height: 0;
+    border: none;
+    border-top: 1px solid #dedede;
 }
 .topNavBar{
     padding: 28px 0px;
@@ -61,4 +71,107 @@ body{
 }
 .banner{
     height: 515px;
+    background-image: url(./img/rs-cover.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.banner .mask{
+    background-color:rgba(0, 0, 0, 0.7);
+    height: 515px;
+}
+main .card{
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+    padding-top: 57px;
+}
+main .picture{
+    float: left;
+    margin-left: 51px;
+    margin-right: 65px;
+    margin-bottom: 40px;
+}
+main .text{
+    float: left;
+    margin-bottom: 40px;
+}
+.text .welcome{
+    background: #e6686a;
+    font-size: 14px;
+    color: white;
+    display: inline-block;
+    padding: 4px 12px;
+    font-weight: bold;
+    line-height: 22px;
+    position: relative;
+}
+.triangle{
+    display: block;
+    position: absolute;
+    top:100%;
+    left: 5px;
+    border: 10px solid #e6686a;
+    height: 0px;
+    width: 0px;
+
+    border-style: solid;
+    /* border-left-width: 5px; */
+    border-bottom-color: transparent;
+    border-top-width: 0px;
+    border-right-width: 0px;
+       
+}
+.name{
+    margin-top: 26px;
+    margin-bottom: 8px;
+    
+}
+.zi{
+    margin-bottom: 21px;
+}
+.text hr{
+    width: 480px;
+}
+
+.text dl dt{
+    float: left;
+    width: 30%;
+    font-weight: bold;
+    padding: 10px;
+    padding-left: 0px;
+}
+.text dl dd{
+    width: 70%;
+    color: #9da0a7;
+    padding: 10px;
+    padding-left: 0px;
+}
+.icon {
+    width: 1em; height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    width: 30px;
+    height: 30px;
+    fill: white;
+
+    vertical-align: top;
+ }
+.media{
+    clear: both;
+    background: #e6686a;
+    text-align: center;
+}
+.media a{
+    display: inline-block;
+    border-radius: 50%;
+    padding:10px 0;
+    line-height: 30px;
+    width: 50px;
+    margin: 18px 19px;
+
+}
+.media a:hover{
+    background: #cf5d5f;
 }
