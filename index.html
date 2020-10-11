@@ -85,7 +85,7 @@
         <h2>技能</h2>
         <ul class="SkillsList clearfix">
             <li>
-                HTML 5 &AMP; CSS 3 
+                HTML 5 &AMP; CSS 3
                 <span class="barValue">80%</span>
                 <div class="barLine">
 
@@ -98,7 +98,7 @@
                 <span class="barValue">52%</span>
                 <div class="barLine">
 
-                    <div class="barFill">
+                    <div class="barFill" style="width: 52%;">
 
                     </div>
                 </div>
@@ -107,7 +107,7 @@
                 <span class="barValue">61%</span>
                 <div class="barLine">
 
-                    <div class="barFill">
+                    <div id="three" class="barFill">
 
                     </div>
                 </div>
@@ -116,7 +116,7 @@
                 <span class="barValue">89%</span>
                 <div class="barLine">
 
-                    <div class="barFill">
+                    <div id="four" class="barFill">
 
                     </div>
                 </div>
@@ -125,7 +125,7 @@
                 <span class="barValue">80%</span>
                 <div class="barLine">
 
-                    <div class="barFill">
+                    <div id="five" class="barFill">
 
                     </div>
                 </div>
@@ -134,27 +134,47 @@
                 <span class="barValue">95%</span>
                 <div class="barLine">
 
-                    <div class="barFill">
+                    <div id="six" class="barFill">
 
                     </div>
                 </div>
             </li>
         </ul>
     </section>
-    <section>
+    <section class="Portfolio">
         <h2>作品集</h2>
         <nav>
-            <ul>
-                <li>所有</li>
-                <li>框架</li>
-                <li>原生JS&amp;CSS</li>
+            <ul class="clearfix">
+                <li id="Portfolio1">所有</li>
+                <li id="Portfolio2">框架</li>
+                <li id="Portfolio3">原生JS&amp;CSS</li>
             </ul>
+            <div id=portfolioBar class="bar state1">
+                <div class="barFill"></div>
+            </div>
+            <script>
+                Portfolio1.onclick = function () {
+                    portfolioBar.className = 'bar state1';
+                }
+                Portfolio2.onclick = function () {
+                    portfolioBar.className = 'bar state2';
+                }
+                Portfolio3.onclick = function () {
+                    portfolioBar.className = 'bar state3';
+                }
+            </script>
         </nav>
-        <div class="jobs">
-            <div class="big"></div>
-            <div class="small"></div>
-            <div class="small"></div>
+        <div class="works">
+            <div class="big" style="left: 0px;top: 0px;">
+                <img style="width: 611px; height: 580px;" src="./img/portfolio-thumb-05-610x600.jpg" alt="图片">
+            </div>
+            <div class="small" style="left: 630px;top: 0px;width: 297px; height: 282px;">
+                <img src="./img/portfolio-thumb-11-289x281.jpg" alt="图片">
+            </div>
+            <div class="small" style="left: 630px;top: 299px;width: 297px; height: 282px;">
+                <img src="./img/portfolio-thumb-08-289x281.jpg" alt="图片">
 
+            </div>
         </div>
     </section>
 
